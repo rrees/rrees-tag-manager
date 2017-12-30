@@ -23,3 +23,14 @@ def test_tag_capitalisation():
 	for tag_string in test_inputs:
 		processed_tags = tags.process(tag_string)
 		assert processed_tags[0] == "lime"
+
+def test_tag_stringification():
+	test_tags = [
+		"custard",
+		"creme",
+		"hobby-horse"
+	]
+
+	tag_string = tags.as_string(test_tags)
+
+	assert tag_string == "custard creme hobby-horse"

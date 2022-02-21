@@ -31,6 +31,6 @@ def test_tag_stringification():
 		"hobby-horse"
 	]
 
-	tag_string = tags.as_string(test_tags)
+	tag_string = tags.to_string(test_tags)
 
 	assert tag_string == "custard creme hobby-horse"

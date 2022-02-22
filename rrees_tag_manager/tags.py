@@ -1,7 +1,10 @@
 import re
 
+
 def process(tag_string):
-	return re.split("[ ,]+", tag_string.lower())
+    cleaned_input = tag_string.strip().lower()
+    return [tag for tag in re.split("[ ,]+", cleaned_input) if tag]
+
 
 def as_string(tags):
-	return " ".join(tags)
+    return " ".join(tags)

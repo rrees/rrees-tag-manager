@@ -1,2 +1,3 @@
-# rrees-tag-manager
+# Tag manager
+
 Common tag handling code
